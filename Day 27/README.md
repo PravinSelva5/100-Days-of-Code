@@ -29,10 +29,8 @@ calculate(add=3, multiply=5)
 
 class Car:
     def __int__(self, **kw):
-        self.make = kw.get("make")
-        self.model = kw.get("model")
-        self.colour = kw.get("colour")
-        
+        self.make = kw["make"]
+        self.model = kw["model"]
 
 my_car = Car(make="Nissan", model="GTR")
 ```
